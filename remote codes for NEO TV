@@ -1,0 +1,139 @@
+# NEO-LED-28000DVBT
+universal remote project starting using codes for NEO LED-28000DVBT
+#these are the codes for tv remotes
+
+codes for neo tv 
+power
+FE50AF
+mute
+0xFED02F
+mode
+0xFE0FF0
+g.mode
+0xFE8F70
+sleep
+0xFEAF50
+
+1
+0xFE708F
+2
+0xFE609F
+3
+0xFEF00F
+4
+0xFEF00F
+5
+0xFEE01F
+6
+0xFEC837
+7
+0xFE6897
+8
+0xFE40BF
+9
+0xFEE817
+0
+0xFE58A7
+
+still
+0xFEEF10
+
+loop button
+0xFED827
+
+vol up
+0xFE9F60
+
+vol down
+0xFE1FE0
+
+fav
+0xFE2FD0
+
+ch.list
+0xFECF30
+
+channel up
+0xFEDF20
+channel down
+0xFE5FA0
+
+menu
+0xFE2AD5
+
+scale
+0xFEBA45
+
+source
+0xFECA35
+
+
+
+up
+0xFE7A85
+down
+0xFE6A95
+left
+0xFEDA25
+right
+0xFE1AE5
+
+ok
+0xFE5AA5
+
+
+
+exit
+0xFEEA15
+audio
+0xFE4FB0
+info
+0xFE9A65
+
+
+
+
+red mix
+0xFEAA55
+green size 
+0xFE4AB5
+yellow size
+0xFE8A75
+blue text
+0xFE0AF5
+
+
+time skip to start
+0xFE926D
+index - halt 
+0xFE52AD
+hold backwards
+0xFEF20D
+
+skip to end
+0xFE32CD
+pause
+0xFED22D
+forward
+0xFE728D
+
+epg
+0xFEBF40
+reveal- go to 
+0xFEB24D
+repeat - subpage
+0xFE12ED
+
+
+dtv/radi
+0xFE7F80
+recmenu
+0xFEFF00
+rec
+0xFE07F8
+
+
+
+
+
+
