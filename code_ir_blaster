@@ -1,0 +1,29 @@
+#include <IRremote.h>
+
+// Pin Assignments
+const int IR_LED_PIN = 9;         // Pin connected to the IR LED
+const int POWER_BTN_PIN = 5;      // Power button pin
+const int VOL_UP_BTN_PIN = 4;     // Volume Up button pin
+const int VOL_DOWN_BTN_PIN = 6;   // Volume Down button pin
+
+// IR Codes
+unsigned long powerCode = 0xFE50AF;       // Power code for NEO TV
+unsigned long volumeUpCode = 0xFE9F60;    // Volume Up code for NEO TV
+unsigned long volumeDownCode = 0xFE1FE0;  // Volume Down code for NEO TV
+
+// Create IRsend object
+IRsend irsend;  // No arguments required for IRsend in IRremote 2.6.0
+
+void setup() {
+  // Pin configuration
+  pinMode(IR_LED_PIN, OUTPUT);            // IR LED pin as OUTPUT
+  pinMode(POWER_BTN_PIN, INPUT_PULLUP);   // Power button with pull-up resistor
+  pinMode(VOL_UP_BTN_PIN, INPUT_PULLUP);  // Volume Up button with pull-up
+  pinMode(VOL_DOWN_BTN_PIN, INPUT_PULLUP); // Volume Down button with pull-up
+
+  // Initialize Serial for debugging
+  Serial.begin(9600);
+  Serial.println("IR Remote Control Ready");
+}
+
+void loop() {
