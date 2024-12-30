@@ -1,0 +1,26 @@
+
+#include <IRremote.h>
+
+const int RECV_PIN = 2; // Pin connected to the output pin of the IR receiver
+IRrecv irrecv(RECV_PIN); // Create an IRrecv object
+decode_results results;  // To store the results of decoding
+
+void setup() {
+  Serial.begin(9600); // Start serial communication
+  irrecv.enableIRIn(); // Start the receiver
+  Serial.println("IR Receiver is ready. Waiting for signals...");
+}
+
+void loop() {
+  if (irrecv.decode(&results)) {
+    Serial.print("Received IR code: 0x");
+    Serial.println(results.value, HEX); // Print the received code in hexadecimal
+
+    // Optionally, check for repeat codes
+    if (results.value == 0xFFFFFFFF) {
+      Serial.println("Repeat code detected.");
+    }
+
+    irrecv.resume(); // Receive the next value
+  }
+}
